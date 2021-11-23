@@ -23,7 +23,7 @@ const Header = () => {
                     <Grid item xs={6}>
                         <div className="headerImage">
                             <Image
-                                src="/../public/ralphHeader.png"
+                                src="/ralphHeader.png"
                                 alt="Picture of the author"
                                 width={400}
                                 height={400}
