@@ -74,7 +74,7 @@
   width: 100vw;
   height: 100vh;
   min-height: 600px;
-  background-image: url("/headerbg.jpg");
+  background-image: url("../public/headerbg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
