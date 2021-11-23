@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&family=Poppins:wght@400;500;600&display=swap');
+
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Outfit', sans-serif;
+}
+
+
+
+.navBar {
+    background-color: #00000000;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+.navBar.scrolled {
+    background-color: rgb(11, 20, 17);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.svgLogo {
+
+  @include tablets {
+    transform: translateY(14%);
+  }
+}
+
+.navLinkContain {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  float: right;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.navLinks {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #ffffffe1;
+  font-size: 0.8rem;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+      color: #35cf82;
+  }
+}
+
+.burger {
+  display: none;
+  float: right;
+
+  @include tablets {
+    display: block;
+  }
+}
+
+
+
+.mainHeader {
+  width: 100vw;
+  height: 100vh;
+  min-height: 600px;
+  background-image: url('../public/headerbg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  @include phones {
+    height: 130vh;
+  }
+}
+
+.headerContent {
+  position: absolute;
+  color: white;
+  top: 50%;
+  right: 50%;
+  transform: translate(0, -50%);
+  width: 450px;
+
+
+  @include laptops {
+    right: 50%;
+    width: 300px;
+  }
+  @include tablets {
+    left: 50%;
+    top: 260px;
+    transform: translate(-50%, 0);
+    text-align: center;
+  }
+  @include phones {
+    width: 80%;
+  }
+}
+.headerName {
+  letter-spacing: 5px;
+  -webkit-text-stroke: 1px #35CF82;
+  color: rgba(255, 255, 255, 0);
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+.headerJob {
+  letter-spacing: 3px;
+  -webkit-text-stroke: 1px #35CF82;
+  color: rgba(255, 255, 255, 0);
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+.headerText {
+  font-size: 1rem;
+  margin: 10px 0;
+  font-weight: 400;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+.headerBtn {
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1F583C;
+
+  &:hover {
+    background-color: #163f2b;
+  }
+}
+
+.headerImage {
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  transform: translate(0, -50%);
+  
+  @include laptops {
+    left: 55%;
+    width: 300px;
+  }
+  @include tablets {
+    left: 50%;
+    top: 60px;
+    transform: translate(-50%, 0);
+    width: 200px;
+  }
+  @include phones {
+    width: 180px;
+  }
+}

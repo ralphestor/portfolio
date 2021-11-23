@@ -1,0 +1,39 @@
+import React, { useState } from 'react';
+import Grid from '@mui/material/Grid';
+import Image from 'next/image'
+import Button from '@mui/material/Button';
+
+const Header = () => {
+    return ( 
+        <header className="mainHeader">
+                <Grid 
+                    container 
+                    spacing={2} 
+                >
+                    <Grid item xs={6}>
+                        <div className="headerContent">
+                            <h1 className="headerName">Ralph Estor</h1>
+                            <h2 className="headerJob">Web Developer</h2>
+
+                            <p className="headerText">Innovative front end developer who finds happiness in building programming projects. 100% eager to learn different technologies to meet business goals. Making positive impact directly to the users is my ultimate motivation.</p>
+                            <Button className="headerBtn" variant="contained">View Projects </Button>
+                            
+                        </div>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <div className="headerImage">
+                            <Image
+                                src="/../public/ralphHeader.png"
+                                alt="Picture of the author"
+                                width={400}
+                                height={400}
+                            />
+                        </div>
+
+                    </Grid>
+                </Grid>
+        </header>
+     );
+}
+ 
+export default Header;
