@@ -43,17 +43,17 @@ const Navbar = () => {
                     </Grid>
                     <Grid item xs={7}>
                         <div className='navLinkContain'>
-                            <Link href=''>
-                                <a class='navLinks'>Home</a>
+                            <Link href='/'>
+                                <a className='navLinks'>Home</a>
                             </Link>
-                            <Link href=''>
-                                <a class='navLinks'>About</a>
+                            <Link href='/'>
+                                <a className='navLinks'>About</a>
                             </Link>
-                            <Link href=''>
-                                <a class='navLinks'>Projects</a>
+                            <Link href='/'>
+                                <a className='navLinks'>Projects</a>
                             </Link>
-                            <Link href=''>
-                                <a class='navLinks'>Contacts</a>
+                            <Link href='/'>
+                                <a className='navLinks'>Contacts</a>
                             </Link>
                         </div> 
                         <div className='burger'>
