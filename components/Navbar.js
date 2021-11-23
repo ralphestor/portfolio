@@ -31,14 +31,7 @@ const Navbar = () => {
             <Toolbar>
                 <Grid container spacing={2}>
                     <Grid item xs={5}>
-                        {/* <Image
-                        src="/../public/ralphLogo.png"
-                        alt="Ralph Estor Logo"
-                        height= {40}
-                        width= {150}
-                        layout="fixed"
 
-                        /> */}
                         <SvgLogo/>
                     </Grid>
                     <Grid item xs={7}>
