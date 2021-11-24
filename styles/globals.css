@@ -9,17 +9,16 @@
 }
 
 .navBar {
-  background-color: #00000000 !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -webkit-transition: all 0.3s ease-in-out !important;
   transition: all 0.3s ease-in-out !important;
 }
 
 .navBar.scrolled {
   background-color: #0b1411;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0px 15px 0 rgba(11, 20, 17, 0.5);
+          box-shadow: 0 0px 15px 0 rgba(11, 20, 17, 0.5);
 }
 
 @media (max-width: 768px) {

@@ -14,14 +14,14 @@
 
 
 .navBar {
-    background-color: #00000000 !important;
-    box-shadow: none !important;
+
+    box-shadow: none;
     transition: all 0.3s ease-in-out !important;
 }
   
 .navBar.scrolled {
     background-color: rgb(11, 20, 17);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 0px 15px 0 rgba(11, 20, 17, 0.5);
 }
 
 .svgLogo {

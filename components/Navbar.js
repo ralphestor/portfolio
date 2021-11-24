@@ -10,10 +10,6 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 
 
-
-
-
-
 const Navbar = () => {
     const  [navbar, setNavbar] = useState(false);
 
@@ -42,7 +38,13 @@ const Navbar = () => {
 
 
     return (
-        <AppBar position='fixed' className={navbar ? 'navBar scrolled' : 'navBar'}>
+        <AppBar 
+            position='fixed' 
+            className={navbar ? 'navBar scrolled' : 'navBar'}
+            sx={{
+                backgroundColor: '#00000000'
+            }}
+        >
             <Toolbar>
                 <Grid container spacing={2}>
                     <Grid item xs={5}>
