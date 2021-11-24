@@ -1,27 +1,10 @@
+import SvgLogo from './SvgLogo';
+
 const Footer = () => {
     return ( 
         <footer>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
-            <p>This is a footer.</p>
+            <SvgLogo className='footerLogo'/>
+            <p>All Rights Reserved &copy;2021</p>
         </footer>
 
      );
