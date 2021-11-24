@@ -42,7 +42,8 @@ const Navbar = () => {
             position='fixed' 
             className={navbar ? 'navBar scrolled' : 'navBar'}
             sx={{
-                backgroundColor: '#00000000'
+                backgroundColor: '#00000000',
+                boxShadow: '0'
             }}
         >
             <Toolbar>

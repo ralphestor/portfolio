@@ -17,8 +17,6 @@
 
 .navBar.scrolled {
   background-color: #0b1411;
-  -webkit-box-shadow: 0 0px 15px 0 rgba(11, 20, 17, 0.5);
-          box-shadow: 0 0px 15px 0 rgba(11, 20, 17, 0.5);
 }
 
 @media (max-width: 768px) {
