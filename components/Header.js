@@ -16,7 +16,21 @@ const Header = () => {
                             <h2 className="headerJob">Web Developer</h2>
 
                             <p className="headerText">Innovative front end developer who finds happiness in building programming projects. 100% eager to learn different technologies to meet business goals. Making positive impact directly to the users is my ultimate motivation.</p>
-                            <Button className="headerBtn" variant="contained">View Projects </Button>
+                            <Button 
+                                className="headerBtn" 
+                                variant="contained"
+                                sx={{
+                                    marginTop: '10px',
+                                    textTransform: 'capitalize',
+                                    fontFamily: 'Poppins',
+                                    backgroundColor: '#1F583C',
+                                    '&:hover': {
+                                        backgroundColor: '#163f2b'
+                                    }
+                                }}
+                            >
+                                View Projects 
+                            </Button>
                             
                         </div>
                     </Grid>

@@ -149,17 +149,6 @@
   text-shadow: 2px 2px 8px #000000;
 }
 
-.headerBtn {
-  margin-top: 10px;
-  text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
-  background-color: #1F583C;
-}
-
-.headerBtn:hover {
-  background-color: #163f2b;
-}
-
 .headerImage {
   position: absolute;
   left: 55%;
