@@ -4,6 +4,12 @@ import Toolbar from '@mui/material/Toolbar';
 import Grid from '@mui/material/Grid';
 import Link from 'next/link';
 import SvgLogo from './SvgLogo';
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import MenuIcon from '@mui/icons-material/Menu';
+
+
 
 
 
@@ -23,7 +29,16 @@ const Navbar = () => {
         window.addEventListener('scroll', changeBackground);
     }
 
-    
+    // burger js
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+      setAnchorEl(null);
+    };
+
 
 
     return (
@@ -50,7 +65,32 @@ const Navbar = () => {
                             </Link>
                         </div> 
                         <div className='burger'>
-                            
+                            <div>
+                            <Button
+                                className = 'navBtn'
+                                id="basic-button"
+                                aria-controls="basic-menu"
+                                aria-haspopup="true"
+                                aria-expanded={open ? 'true' : undefined}
+                                onClick={handleClick}
+                            >
+                                <MenuIcon/>
+                            </Button>
+                            <Menu
+                                id="basic-menu"
+                                anchorEl={anchorEl}
+                                open={open}
+                                onClose={handleClose}
+                                MenuListProps={{
+                                'aria-labelledby': 'basic-button',
+                                }}
+                            >
+                                <MenuItem onClick={handleClose}>Home</MenuItem>
+                                <MenuItem onClick={handleClose}>About</MenuItem>
+                                <MenuItem onClick={handleClose}>Projects</MenuItem>
+                                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                            </Menu>
+                            </div>
                         </div>
                     </Grid>
                 </Grid>
