@@ -11,6 +11,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { styled } from '@mui/styles';
 import Burger from './Burger';
+import Link from 'next/link';
 
 const MyButton = styled(Button)({
     backgroundColor: '#ffffff00',
@@ -62,13 +63,15 @@ export default function SwipeableTemporaryDrawer() {
               }
             }}
           >
-            <ListItemText 
-              primary={text}
-              sx={{
-                textAlign: 'center',
-                fontFamily: 'sans-serif',
-              }}
-            />
+            <Link href='/'>
+              <ListItemText 
+                primary={text}
+                sx={{
+                  textAlign: 'center',
+                  fontFamily: 'sans-serif',
+                }}
+              />
+            </Link>
           </ListItem>
         ))}
       </List>

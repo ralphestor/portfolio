@@ -40,7 +40,7 @@ const Navbar = () => {
                     </Grid>
                     <Grid item xs={7}>
                         <div className='navLinkContain'>
-                            <Link href='/'>
+                            <Link href='/#home'>
                                 <a className='navLinks'>Home</a>
                             </Link>
                             <Link href='/#about'>

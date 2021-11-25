@@ -11,7 +11,7 @@ const Header = () => {
                     spacing={2} 
                 >
                     <Grid item xs={6}>
-                        <div className="headerContent">
+                        <div className="headerContent"id="home">
                             <h1 className="headerName">Ralph Estor</h1>
                             <h2 className="headerJob">Web Developer</h2>
 
