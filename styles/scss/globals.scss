@@ -209,7 +209,26 @@
   }
 }
 
+.textStackLbl {
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.gridIcons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+.gridIcon {
+  margin: 20px;
+}
+
+.paragraph {
+  line-height: 30px;
+}
 
 
 

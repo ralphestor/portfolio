@@ -4,6 +4,7 @@ import About from './About';
 import Footer from './Footer';
 import Projects from './Projects';
 import Contacts from './Contacts';
+import TechStack from './TechStack';
 
 const Layout = ({ children }) => {
     return ( 
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
             <Header/>
             <div className="mainContainer">
                 <About/>
+                <TechStack/>
                 <Projects/>
                 <Contacts/>
                 { children }
