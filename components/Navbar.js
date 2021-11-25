@@ -43,13 +43,13 @@ const Navbar = () => {
                             <Link href='/'>
                                 <a className='navLinks'>Home</a>
                             </Link>
-                            <Link href=''>
+                            <Link href='/#about'>
                                 <a className='navLinks'>About</a>
                             </Link>
-                            <Link href='/'>
+                            <Link href='/#projects'>
                                 <a className='navLinks'>Projects</a>
                             </Link>
-                            <Link href='/'>
+                            <Link href='/#contacts'>
                                 <a className='navLinks'>Contacts</a>
                             </Link>
                         </div> 

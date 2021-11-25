@@ -4,7 +4,7 @@ import SectionTitle from './SectionTitle';
 const About = () => {
     return ( 
         <main>
-            <SectionTitle name="About Me" id="About"/>
+            <SectionTitle name="About Me" id="about"/>
             <div className="aboutGrid">
                 <Image
                     src="/RalphAbout.png"

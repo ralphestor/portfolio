@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 const Contacts = () => {
     return ( 
         <main>
-            <SectionTitle name="Contact Me"/>
+            <SectionTitle name="Contact Me" id="contacts"/>
             <div className="contactsGrid">
 
             </div>    
