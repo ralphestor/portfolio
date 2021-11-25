@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Grid from '@mui/material/Grid';
-import Image from 'next/image'
+import Image from 'next/image';
 import Button from '@mui/material/Button';
 
 const Header = () => {
@@ -23,9 +23,9 @@ const Header = () => {
                                     marginTop: '10px',
                                     textTransform: 'capitalize',
                                     fontFamily: 'Poppins',
-                                    backgroundColor: '#1F583C',
+                                    background: 'linear-gradient(45deg, #0097a7 30%, #35CF82 90%)',
                                     '&:hover': {
-                                        backgroundColor: '#163f2b'
+                                        background: 'linear-gradient(135deg, #29b6f6 30%, #35CF82 90%)',
                                     }
                                 }}
                             >
@@ -37,7 +37,7 @@ const Header = () => {
                     <Grid item xs={6}>
                         <div className="headerImage">
                             <Image
-                                src="/ralphHeader.png"
+                                src="/ralphHeader2.png"
                                 alt="Picture of the author"
                                 width={400}
                                 height={400}

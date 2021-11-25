@@ -14,19 +14,18 @@
 
 
 .navBar {
-
     box-shadow: none;
-    transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out;
 }
   
 .navBar.scrolled {
-    background-color: rgb(11, 20, 17);
+    background-color:#050505;
 }
 
 .svgLogo {
 
   @include tablets {
-    transform: translateY(14%);
+    transform: translateY(40%);
   }
 }
 
@@ -49,7 +48,7 @@
   transition: all 0.3s ease-in-out;
 
   &:hover {
-      color: #35cf82;
+      color: rgb(53, 207, 130);
       text-shadow: 0px 0px 15px #ffffff;
   }
 }
@@ -120,7 +119,7 @@
 
 .headerJob {
   letter-spacing: 3px;
-  -webkit-text-stroke: 1px #35CF82;
+  -webkit-text-stroke: 1px #81d4fa;
   color: rgba(255, 255, 255, 0);
   font-family: 'Poppins', sans-serif;
   text-shadow: 2px 2px 8px #000000;
@@ -154,6 +153,68 @@
     width: 180px;
   }
 }
+
+
+//Main Contents
+.mainContainer {
+  width: calc(1000px + 3%);
+  margin: 0 auto;
+
+  @include laptops {
+    width: calc(500px + 20%);
+  }
+
+  @include tablets {
+    width: 80%;
+  }
+
+  @include phones {
+    width: 90%;
+  }
+}
+
+.sectionTitleContainer {
+  margin: 50px 0;
+  text-align: center;
+
+  .sectionTitle {
+    letter-spacing: 4px;
+    color: #1F583C;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+
+    @include tablets {
+      font-size: 1.5rem;
+    }
+
+    @include phones {
+      width: auto;
+    }
+  }
+  
+  .titleShadow {
+    width: 100%;
+    font-size: 4rem;
+    letter-spacing: 8px;
+    color: #1f583c2c;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -85%);
+
+  
+    @include tablets {
+      font-size: 3rem;
+      letter-spacing: 6px;
+    }
+
+    @include phones {
+      display: none;
+    }
+  
+  }
+}
+
 
 
 
@@ -190,3 +251,8 @@ footer {
   }
 }
 
+@media (max-width: 300px) {
+  .svgLogo {
+    display: none;
+  }
+}

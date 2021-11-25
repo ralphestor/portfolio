@@ -7,7 +7,7 @@ export default function Home() {
           <title>Ralph Estor - Portfolio</title>
           <link rel="icon" href="/favicon.png" />
         </Head>
-        <h1>Homepage</h1>
+        <section className='blocker'></section>
     </div>
   )
 }
