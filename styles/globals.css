@@ -11,8 +11,8 @@
 .navBar {
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
 .navBar.scrolled {
@@ -232,7 +232,7 @@
   width: 100%;
   font-size: 4rem;
   letter-spacing: 8px;
-  color: #1f583c2c;
+  color: #1f583c4b;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -85%);

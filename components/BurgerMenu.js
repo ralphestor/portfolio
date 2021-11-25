@@ -52,10 +52,10 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'About', 'Projects', 'Contacts'].map((text, index) => (
+          <Link href="/#home">
           <ListItem 
             button 
-            key={text}
+            key="Home"
             sx={{
               height: 70,
               '&:hover': {
@@ -63,17 +63,78 @@ export default function SwipeableTemporaryDrawer() {
               }
             }}
           >
-            <Link href='/'>
               <ListItemText 
-                primary={text}
+                primary="Home"
                 sx={{
                   textAlign: 'center',
                   fontFamily: 'sans-serif',
                 }}
               />
-            </Link>
           </ListItem>
-        ))}
+          </Link>
+
+          <Link href="/#about">
+          <ListItem 
+            button 
+            key="About"
+            sx={{
+              height: 70,
+              '&:hover': {
+                backgroundColor: 'rgba(53, 207, 130, 0.5)'
+              }
+            }}
+          >
+              <ListItemText 
+                primary="About"
+                sx={{
+                  textAlign: 'center',
+                  fontFamily: 'sans-serif',
+                }}
+              />
+          </ListItem>
+          </Link>
+
+          <Link href="/#projects">
+          <ListItem 
+            button 
+            key="Projects"
+            sx={{
+              height: 70,
+              '&:hover': {
+                backgroundColor: 'rgba(53, 207, 130, 0.5)'
+              }
+            }}
+          >
+              <ListItemText 
+                primary="Projects"
+                sx={{
+                  textAlign: 'center',
+                  fontFamily: 'sans-serif',
+                }}
+              />
+          </ListItem>
+          </Link>
+
+          <Link href="/#contacts">
+          <ListItem 
+            button 
+            key="Contacts"
+            sx={{
+              height: 70,
+              '&:hover': {
+                backgroundColor: 'rgba(53, 207, 130, 0.5)'
+              }
+            }}
+          >
+              <ListItemText 
+                primary="Contacts"
+                sx={{
+                  textAlign: 'center',
+                  fontFamily: 'sans-serif'
+                }}
+              />
+          </ListItem>
+          </Link>
       </List>
     </Box>
   );

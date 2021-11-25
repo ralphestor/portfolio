@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
 import Button from '@mui/material/Button';
+import Link from 'next/link';
 
 const Header = () => {
     return ( 
@@ -10,27 +11,31 @@ const Header = () => {
                     container 
                     spacing={2} 
                 >
+                    <div id='home'></div>
                     <Grid item xs={6}>
-                        <div className="headerContent"id="home">
+                        <div className="headerContent">
                             <h1 className="headerName">Ralph Estor</h1>
                             <h2 className="headerJob">Web Developer</h2>
 
                             <p className="headerText">Innovative front end developer who finds happiness in building programming projects. 100% eager to learn different technologies to meet business goals. Making positive impact directly to the users is my ultimate motivation.</p>
-                            <Button 
-                                className="headerBtn" 
-                                variant="contained"
-                                sx={{
-                                    marginTop: '10px',
-                                    textTransform: 'capitalize',
-                                    fontFamily: 'Poppins',
-                                    background: 'linear-gradient(45deg, #0097a7 30%, #35CF82 90%)',
-                                    '&:hover': {
-                                        background: 'linear-gradient(135deg, #29b6f6 30%, #35CF82 90%)',
-                                    }
-                                }}
-                            >
-                                View Projects 
-                            </Button>
+                            <Link href='/#projects'>
+                                <Button 
+                                    className="headerBtn" 
+                                    variant="contained"
+                                    sx={{
+                                        marginTop: '10px',
+                                        textTransform: 'capitalize',
+                                        fontFamily: 'Poppins',
+                                        background: 'linear-gradient(45deg, #0097a7 30%, #35CF82 90%)',
+                                        '&:hover': {
+                                            background: 'linear-gradient(135deg, #29b6f6 30%, #35CF82 90%)',
+                                        }
+                                    }}
+                                >
+                                    View Projects 
+                                </Button>
+                            </Link>
+
                             
                         </div>
                     </Grid>
