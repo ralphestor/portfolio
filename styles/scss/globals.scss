@@ -22,12 +22,6 @@
     background-color:#050505;
 }
 
-.svgLogo {
-
-  @include tablets {
-    transform: translateY(40%);
-  }
-}
 
 .navLinkContain {
   display: flex;

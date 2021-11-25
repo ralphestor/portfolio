@@ -19,13 +19,6 @@
   background-color: #050505;
 }
 
-@media (max-width: 768px) {
-  .svgLogo {
-    -webkit-transform: translateY(40%);
-            transform: translateY(40%);
-  }
-}
-
 .navLinkContain {
   display: -webkit-box;
   display: -ms-flexbox;
