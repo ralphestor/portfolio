@@ -46,7 +46,11 @@ export default function SwipeableTemporaryDrawer() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      sx={{ 
+        width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250,
+        backgroundColor: 'rgba(53, 207, 130)',
+        height: '100%'
+      }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -59,7 +63,7 @@ export default function SwipeableTemporaryDrawer() {
             sx={{
               height: 70,
               '&:hover': {
-                backgroundColor: 'rgba(53, 207, 130, 0.5)'
+                backgroundColor: 'rgba(255, 255, 255, 0.5)'
               }
             }}
           >
@@ -67,7 +71,7 @@ export default function SwipeableTemporaryDrawer() {
                 primary="Home"
                 sx={{
                   textAlign: 'center',
-                  fontFamily: 'sans-serif',
+                  color: '#ffffff'
                 }}
               />
           </ListItem>
@@ -80,7 +84,7 @@ export default function SwipeableTemporaryDrawer() {
             sx={{
               height: 70,
               '&:hover': {
-                backgroundColor: 'rgba(53, 207, 130, 0.5)'
+                backgroundColor: 'rgba(255, 255, 255, 0.5)'
               }
             }}
           >
@@ -88,7 +92,7 @@ export default function SwipeableTemporaryDrawer() {
                 primary="About"
                 sx={{
                   textAlign: 'center',
-                  fontFamily: 'sans-serif',
+                  color: '#ffffff'
                 }}
               />
           </ListItem>
@@ -101,7 +105,7 @@ export default function SwipeableTemporaryDrawer() {
             sx={{
               height: 70,
               '&:hover': {
-                backgroundColor: 'rgba(53, 207, 130, 0.5)'
+                backgroundColor: 'rgba(255, 255, 255, 0.5)'
               }
             }}
           >
@@ -109,7 +113,7 @@ export default function SwipeableTemporaryDrawer() {
                 primary="Projects"
                 sx={{
                   textAlign: 'center',
-                  fontFamily: 'sans-serif',
+                  color: '#ffffff'
                 }}
               />
           </ListItem>
@@ -122,7 +126,7 @@ export default function SwipeableTemporaryDrawer() {
             sx={{
               height: 70,
               '&:hover': {
-                backgroundColor: 'rgba(53, 207, 130, 0.5)'
+                backgroundColor: 'rgba(255, 255, 255, 0.5)'
               }
             }}
           >
@@ -130,7 +134,7 @@ export default function SwipeableTemporaryDrawer() {
                 primary="Contacts"
                 sx={{
                   textAlign: 'center',
-                  fontFamily: 'sans-serif'
+                  color: '#ffffff'
                 }}
               />
           </ListItem>
