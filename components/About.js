@@ -17,7 +17,7 @@ const About = () => {
                 <div className="grid2">
                     <div>
                         <h4>Overview</h4>
-                        <p>Hi! I'm Ralph, a web developer. I'm an Electronics Engineeering student who decided to code for a living because I feel the achievement everytime I create software applications. (Please hire me hahaha)  </p>
+                        <p>Hi! I'm Ralph, a 22-year old web developer. I'm an Electronics Engineeering student who decided to code for a living because I feel the achievement everytime I create software applications. (Please hire me hahaha)  </p>
                     </div>
                     <div>
                         <h4>Technical Skills</h4>

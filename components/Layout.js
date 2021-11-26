@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
             <Header/>
             <div className="mainContainer">
                 <About/>
-                <TechStack/>
+                {/* <TechStack/> */}
                 <Projects/>
                 <Contacts/>
                 { children }
