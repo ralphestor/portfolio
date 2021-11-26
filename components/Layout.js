@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
             <Navbar/>
             <Header/>
             <div className="mainContainer">
-                {/* <About/> */}
+                <About/>
                 <TechStack/>
                 <Projects/>
                 <Contacts/>

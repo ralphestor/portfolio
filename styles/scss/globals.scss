@@ -209,6 +209,7 @@
   }
 }
 
+//tech stack css
 .textStackLbl {
   margin-top: 40px;
   font-family: 'Poppins', sans-serif;
@@ -231,15 +232,57 @@
 }
 
 
+//about css
+.aboutLbl {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+
+.overPar {
+  width: 400px;
+
+  @include tablets {
+    width: 100%;
+  }
+
+}
+
+.aboutGrid {
+  display: flex;
+  gap: 40px;
+  @include tablets {
+    flex-direction: column;     
+  }
 
 
+  .aboutGrid1 {
+    width: 100%;
+    margin: 0 auto;
+  
+    .wrapperDiv {
+      float: right;
+
+      @include laptops {
+        float: left;
+      }
+
+      @include tablets {
+        float: none;
+        text-align: center;
+      }
+    }
+  }
+  
+  .aboutGrid2 {
+    width: 100%;
+  }
+}
 
 
-
-
-
-
-
+.listItem {
+  margin: 10px 0;
+  margin-left: 20px;
+}
 
 
 

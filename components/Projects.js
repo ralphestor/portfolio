@@ -5,7 +5,7 @@ const Projects = () => {
         <main>
             <SectionTitle name="My Projects" id="projects"/>
             <div className="projectsGrid">
-
+                
             </div>    
         </main>
      );
