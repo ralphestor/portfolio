@@ -3,7 +3,7 @@ import SectionTitle from './SectionTitle';
 
 const About = () => {
     return ( 
-        <main>
+        <section>
             <SectionTitle name="About Me" id="about"/>
             <div className="aboutGrid">
                 <div className="aboutGrid1">
@@ -21,7 +21,7 @@ const About = () => {
                     <p className="paragraph overPar">Hi! I'm Ralph, a 22-year old web developer from Davao City, Philippines. I'm an Electronics Engineeering student who decided to code for a living because I feel the achievement everytime I create software applications (Please hire me hahaha). </p>
                 </div>
             </div>
-        </main>
+        </section>
      );
 }
  
