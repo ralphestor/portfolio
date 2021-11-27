@@ -279,6 +279,7 @@
 
 .overPar {
   width: 400px;
+  line-height: 30px;
 }
 
 @media (max-width: 768px) {
