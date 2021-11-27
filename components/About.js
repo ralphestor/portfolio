@@ -17,8 +17,10 @@ const About = () => {
                     </div>
                 </div>
                 <div className="aboutGrid2">
-                    {/* <h4 className="aboutLbl">Overview</h4>
-                    <p className="paragraph overPar">Hi! I'm Ralph, a 22-year old web developer from Davao City, Philippines. I'm an Electronics Engineeering student who decided to code for a living because I feel the achievement everytime I create software applications (Please hire me hahaha). </p> */}
+                    <div>
+                        <h4 className="aboutLbl">Overview</h4>
+                        <p className="paragraph overPar">Hi! I'm Ralph, a 22-year old web developer from Davao City, Philippines. I'm an Electronics Engineeering student who decided to code for a living because I feel the achievement everytime I create software applications (Please hire me hahaha). </p>
+                    </div>
                 </div>
             </div>
         </main>
