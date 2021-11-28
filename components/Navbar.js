@@ -34,12 +34,12 @@ const Navbar = () => {
         >
             <Toolbar>
                 <Grid container spacing={2}>
-                    <Grid item xs={5}>
+                    <Grid item xs={6}>
                         <Link href='/'>
                             <SvgLogo/>
                         </Link>
                     </Grid>
-                    <Grid item xs={7}>
+                    <Grid item xs={6}>
                         <div className='navLinkContain'>
                             <Link href='/#home'>
                                 <a className='navLinks'>Home</a>

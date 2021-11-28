@@ -3,8 +3,8 @@ import SectionTitle from './SectionTitle';
 
 const About = () => {
     return ( 
-        <main>
-            <SectionTitle name="About Me" id="about"/>
+        <main id="about">
+            <SectionTitle name="About Me"/>
             <div className="aboutGrid">
                 <div className="aboutGrid1">
                     <div className="wrapperDiv">

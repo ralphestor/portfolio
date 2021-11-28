@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Projects from './Projects';
 import Contacts from './Contacts';
 import TechStack from './TechStack';
+import MyList from './MyList';
 
 const Layout = ({ children }) => {
     return ( 
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
             <Header/>
             <div className="mainContainer">
                 <About/>
+                <MyList/>
                 <TechStack/>
                 <Projects/>
                 <Contacts/>

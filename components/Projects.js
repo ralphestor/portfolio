@@ -2,10 +2,12 @@ import SectionTitle from "./SectionTitle";
 
 const Projects = () => {
     return ( 
-        <main>
-            <SectionTitle name="My Projects" id="projects"/>
+        <main id="projects">
+            <SectionTitle name="My Projects"/>
             <div className="projectsGrid">
-                
+                <div>
+                    <h4>ICSI School Website</h4>
+                </div>
             </div>    
         </main>
      );
