@@ -10,6 +10,7 @@ const MyList = () => {
                         <li className="listItem">Web Design</li>
                         <li className="listItem">Photo Editing</li>
                         <li className="listItem">Mathematical Skills</li>
+                        <li className="listItem">Troubleshooting Software and Hardware Issues</li>
                     </ul>
                 </div> 
                 <div> 
