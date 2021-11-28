@@ -27,6 +27,7 @@ const Header = () => {
                                         textTransform: 'capitalize',
                                         fontFamily: 'Poppins',
                                         background: 'linear-gradient(45deg, #0097a7 30%, #35CF82 90%)',
+
                                         '&:hover': {
                                             background: 'linear-gradient(135deg, #29b6f6 30%, #35CF82 90%)',
                                         }
