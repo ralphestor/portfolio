@@ -232,8 +232,16 @@
   line-height: 30px;
 }
 
+.parTech {
+  margin: 20px 0;
+}
+
 
 //about css
+#about {
+  padding-top: 40px;
+}
+
 .aboutLbl {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
@@ -309,6 +317,7 @@
 //contact css
 #contacts {
   padding-bottom: 100px;
+  padding-top: 40px;
   .contactsGrid {
     h4 {
       text-align: center;
@@ -336,6 +345,10 @@
 }
 
 //Projects
+#projects {
+  padding-top: 40px;
+}
+
 .cardTitle {
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -347,6 +360,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+}
+
+.lastProjCard {
+  margin-bottom: 20px;
 }
 
 

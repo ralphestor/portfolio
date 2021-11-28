@@ -4,7 +4,9 @@ import SectionTitle from './SectionTitle';
 const About = () => {
     return ( 
         <main id="about">
-            <SectionTitle name="About Me"/>
+            <div>
+                <SectionTitle name="About Me"/>
+            </div>
             <div className="aboutGrid">
                 <div className="aboutGrid1">
                     <div className="wrapperDiv">

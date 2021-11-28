@@ -373,7 +373,7 @@ const Projects = () => {
                         </CardActions>
                     </Card>
                 </div>
-                <div>
+                <div className="lastProjCard">
                     <Card 
                         sx={{ 
                             maxWidth: 400,
