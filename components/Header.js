@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
 
 const Header = () => {
+
     return ( 
-        <header className="mainHeader">
+        <header className="mainHeader" id="home">
                 <Grid 
                     container 
                     spacing={2} 
                 >
-                    <div id='home'></div>
                     <Grid item xs={6}>
                         <div className="headerContent">
                             <h1 className="headerName">Ralph Estor</h1>
                             <h2 className="headerJob">Web Developer</h2>
 
                             <p className="headerText">Innovative front end developer who finds happiness in building programming projects. 100% eager to learn different technologies to meet business goals. Making positive impact directly to the users is my ultimate motivation.</p>
-                            <Link href='/#projects'>
+                            <Link href='/#contacts'>
                                 <Button 
                                     className="headerBtn" 
                                     variant="contained"
@@ -33,7 +33,7 @@ const Header = () => {
                                         }
                                     }}
                                 >
-                                    View Projects 
+                                    Contact Me
                                 </Button>
                             </Link>
 

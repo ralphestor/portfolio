@@ -128,6 +128,7 @@
 
 
 .headerImage {
+  // opacity: 0;
   position: absolute;
   left: 55%;
   top: 50%;
@@ -366,6 +367,18 @@
   margin-bottom: 20px;
 }
 
+.card {
+  @include tablets {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.cardImg {
+  @include tablets {
+    width: 100%;
+  }
+}
 
 
 
