@@ -237,7 +237,7 @@ const Projects = () => {
                                 </Stack>
 
                                 <p className="paragraph">
-                                    A simple todo list project that can create, update, delete todo items. The data is stored in the Local Storage to save the data. This project is programmed with Create React App and Material UI is utilized for pre-styled react components. A class-based component version of this project is also created which is found in "classTodo" branch of the Github repository.
+                                    A simple todo list project that can create, update, delete todo items. The data is stored in the Local Storage to save the data. This project is programmed with Create React App and Material UI is utilized for pre-styled react components. A class-based component version of this project is also created which is found in <i>classTodo</i> branch of the Github repository.
                                 </p>
                 
                             </CardContent>
