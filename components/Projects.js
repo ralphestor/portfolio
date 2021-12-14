@@ -140,22 +140,25 @@ const Projects = () => {
                                     </Button>
                                 </a>
 
-                                <a className="projBtns" href="https://github.com/ralphestor/todolist" target="_blank" rel="noreferrer">
+                                <a className="projBtns" href="https://github.com/ralphestor/icsi" target="_blank" rel="noreferrer">
                                     <Button 
-                                        variant="contained"
+                                        variant="outlined"
                                         sx={{
                                             marginTop: '10px',
                                             textTransform: 'capitalize',
                                             fontFamily: 'Poppins',
-                                            backgroundColor: '#1F583C', 
+                                            color: '#1F583C', 
+                                            border: '1px solid #1F583C', 
                                             transition: 'all 0.3s ease-in-out',
                                             
                                             '&:hover': {
                                                 backgroundColor: '#4abb75',
+                                                border: '1px solid #4abb75', 
+                                                color: '#FFFFFF'
                                             }
                                         }}
                                     >
-                                        Visit Github Repo
+                                        Github Repo
                                     </Button>
                                 </a>
                             </CardActions>
@@ -268,20 +271,23 @@ const Projects = () => {
 
                                 <a className="projBtns" href="https://github.com/ralphestor/todolist" target="_blank" rel="noreferrer">
                                     <Button 
-                                        variant="contained"
+                                        variant="outlined"
                                         sx={{
                                             marginTop: '10px',
                                             textTransform: 'capitalize',
                                             fontFamily: 'Poppins',
-                                            backgroundColor: '#1F583C', 
+                                            color: '#1F583C', 
+                                            border: '1px solid #1F583C', 
                                             transition: 'all 0.3s ease-in-out',
                                             
                                             '&:hover': {
                                                 backgroundColor: '#4abb75',
+                                                border: '1px solid #4abb75', 
+                                                color: '#FFFFFF'
                                             }
                                         }}
                                     >
-                                        Visit Github Repo
+                                        Github Repo
                                     </Button>
                                 </a>
                             </CardActions>
