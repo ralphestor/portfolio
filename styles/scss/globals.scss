@@ -380,6 +380,14 @@
   }
 }
 
+.projBtns {
+  text-decoration: none;
+
+  @include phones {
+    display: block;
+  }
+}
+
 
 
 footer {

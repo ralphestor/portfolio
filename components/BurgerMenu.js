@@ -59,7 +59,7 @@ export default function SwipeableTemporaryDrawer() {
             sx={{
               height: 70,
               '&:hover': {
-                backgroundColor: 'rgba(255, 255, 255, 0.5)'
+                backgroundColor: 'rgba(0, 0, 0, 0.5)'
               }
             }}
           >
@@ -80,7 +80,7 @@ export default function SwipeableTemporaryDrawer() {
             sx={{
               height: 70,
               '&:hover': {
-                backgroundColor: 'rgba(255, 255, 255, 0.5)'
+                backgroundColor: 'rgba(0, 0, 0, 0.5)'
               }
             }}
           >
@@ -101,7 +101,7 @@ export default function SwipeableTemporaryDrawer() {
             sx={{
               height: 70,
               '&:hover': {
-                backgroundColor: 'rgba(255, 255, 255, 0.5)'
+                backgroundColor: 'rgba(0, 0, 0, 0.5)'
               }
             }}
           >
@@ -122,8 +122,7 @@ export default function SwipeableTemporaryDrawer() {
             sx={{
               height: 70,
               '&:hover': {
-                backgroundColor: 'rgba(255, 255, 255, 0.5)',
-                src: 'https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&family=Poppins:wght@400;500;600&display=swap'
+                backgroundColor: 'rgba(0, 0, 0, 0.5)'
               }
             }}
           >
@@ -131,10 +130,7 @@ export default function SwipeableTemporaryDrawer() {
                 primary="Contacts"
                 sx={{
                   textAlign: 'center',
-                  color: '#ffffff',
-                  '@font-face': {
-                    fontFamily: 'Poppins'
-                  }
+                  color: '#ffffff'
                 }}
               />
           </ListItem>

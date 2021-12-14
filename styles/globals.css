@@ -448,6 +448,16 @@
   }
 }
 
+.projBtns {
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .projBtns {
+    display: block;
+  }
+}
+
 footer {
   width: 100%;
   height: 120px;

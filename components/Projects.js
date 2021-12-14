@@ -108,48 +108,56 @@ const Projects = () => {
                                 </Stack>
 
                                 <p className="paragraph">
-                                    This website is inpired by the school that I worked for before. It contains the usual pages for a school website. It is capable of posting articles with images. Log In and Sign Up system was implemented with the help of Passport.js so that only admins can post, update, and delete articles. 
+                                    This website is inspired by the school that I worked for before. It contains the usual pages for a school website. It is capable of posting articles with images. Log In and Sign Up system was implemented with the help of Passport.js so that only admins can post, update, and delete articles. 
                                 </p>
                 
                             </CardContent>
                             <CardActions
                                 sx={{ 
                                     justifyContent: 'center',
-                                    paddingBottom: '20px'
+                                    paddingBottom: '20px',
+                                    '@media screen and (max-width: 400px)': {
+                                        flexDirection: 'column'
+                                    }
                                 }}
                             >
-                                <Button 
-                                    variant="contained"
-                                    sx={{
-                                        marginTop: '10px',
-                                        textTransform: 'capitalize',
-                                        fontFamily: 'Poppins',
-                                        backgroundColor: '#1F583C', 
-                                        transition: 'all 0.3s ease-in-out',
-                                        
-                                        '&:hover': {
-                                            backgroundColor: '#4abb75',
-                                        }
-                                    }}
-                                >
-                                    Visit Site
-                                </Button>
-                                <Button 
-                                    variant="contained"
-                                    sx={{
-                                        marginTop: '10px',
-                                        textTransform: 'capitalize',
-                                        fontFamily: 'Poppins',
-                                        backgroundColor: '#1F583C', 
-                                        transition: 'all 0.3s ease-in-out',
-                                        
-                                        '&:hover': {
-                                            backgroundColor: '#4abb75',
-                                        }
-                                    }}
-                                >
-                                    Visit Github
-                                </Button>
+                                <a className="projBtns" href="https://todoapp-ralphestor.netlify.app/" target="_blank" rel="noreferrer">
+                                    <Button 
+                                        variant="contained"
+                                        sx={{
+                                            marginTop: '10px',
+                                            textTransform: 'capitalize',
+                                            fontFamily: 'Poppins',
+                                            backgroundColor: '#1F583C', 
+                                            transition: 'all 0.3s ease-in-out',
+                                            
+                                            '&:hover': {
+                                                backgroundColor: '#4abb75',
+                                            }
+                                        }}
+                                    >
+                                        Visit Site
+                                    </Button>
+                                </a>
+
+                                <a className="projBtns" href="https://github.com/ralphestor/todolist" target="_blank" rel="noreferrer">
+                                    <Button 
+                                        variant="contained"
+                                        sx={{
+                                            marginTop: '10px',
+                                            textTransform: 'capitalize',
+                                            fontFamily: 'Poppins',
+                                            backgroundColor: '#1F583C', 
+                                            transition: 'all 0.3s ease-in-out',
+                                            
+                                            '&:hover': {
+                                                backgroundColor: '#4abb75',
+                                            }
+                                        }}
+                                    >
+                                        Visit Github Repo
+                                    </Button>
+                                </a>
                             </CardActions>
                         </div>
                     </Card>
@@ -169,7 +177,7 @@ const Projects = () => {
                             <CardMedia
                                 className="cardImg"
                                 component="img"
-                                image="/icsiCard.png"
+                                image="/todoApp.png"
                                 alt="SchoolLogo"
                                 sx={{
                                     width: '300px',
@@ -185,7 +193,7 @@ const Projects = () => {
                                 }}
                             > 
                                 <h4 className="cardTitle">
-                                    ICSI: University Website
+                                    TodoApp
                                 </h4>
                                     
                                 <Stack 
@@ -200,7 +208,7 @@ const Projects = () => {
                                     }}
                                 >
                                         <Chip 
-                                            label="EJS" 
+                                            label="React" 
                                             variant="outlined"                                 
                                             sx={{ 
                                                 fontFamily: 'Poppins',
@@ -208,7 +216,7 @@ const Projects = () => {
                                             }}
                                         />
                                         <Chip 
-                                            label="SCSS" 
+                                            label="Material UI" 
                                             variant="outlined"                                 
                                             sx={{ 
                                                 fontFamily: 'Poppins',
@@ -216,31 +224,7 @@ const Projects = () => {
                                             }}
                                         />
                                         <Chip 
-                                            label="Express.js" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="MongoDB" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="JQuery" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="EJS" 
+                                            label="Local Storage" 
                                             variant="outlined"                                 
                                             sx={{ 
                                                 fontFamily: 'Poppins',
@@ -250,190 +234,56 @@ const Projects = () => {
                                 </Stack>
 
                                 <p className="paragraph">
-                                    This website is inpired by the school that I worked for before. It contains the usual pages for a school website. It is capable of posting articles with images. Log In and Sign Up system was implemented with the help of Passport.js so that only admins can post, update, and delete articles. 
+                                    A simple todo list project that can create, update, delete todo items. The data is stored in the Local Storage to save the data. This project is programmed with Create React App and Material UI is utilized for pre-styled react components. A class-based component version of this project is also created which is found in "classTodo" branch of the Github repository.
                                 </p>
                 
                             </CardContent>
                             <CardActions
                                 sx={{ 
                                     justifyContent: 'center',
-                                    paddingBottom: '20px'
+                                    paddingBottom: '20px',
+                                    '@media screen and (max-width: 400px)': {
+                                        flexDirection: 'column'
+                                    }
                                 }}
                             >
-                                <Button 
-                                    variant="contained"
-                                    sx={{
-                                        marginTop: '10px',
-                                        textTransform: 'capitalize',
-                                        fontFamily: 'Poppins',
-                                        backgroundColor: '#1F583C', 
-                                        transition: 'all 0.3s ease-in-out',
-                                        
-                                        '&:hover': {
-                                            backgroundColor: '#4abb75',
-                                        }
-                                    }}
-                                >
-                                    Visit Site
-                                </Button>
-                                <Button 
-                                    variant="contained"
-                                    sx={{
-                                        marginTop: '10px',
-                                        textTransform: 'capitalize',
-                                        fontFamily: 'Poppins',
-                                        backgroundColor: '#1F583C', 
-                                        transition: 'all 0.3s ease-in-out',
-                                        
-                                        '&:hover': {
-                                            backgroundColor: '#4abb75',
-                                        }
-                                    }}
-                                >
-                                    Visit Github
-                                </Button>
-                            </CardActions>
-                        </div>
-                    </Card>
-                </div>
-                <div>
-                    <Card
-                        className="card"
-                        sx={{
-                            width: '100%',
-                            boxShadow: '5px 5px 10px #888888',
-                            display: 'flex',
-                            flexDirection: 'row'
-                         }}
-                    
-                    >
-                        <div>
-                            <CardMedia
-                                className="cardImg"
-                                component="img"
-                                image="/icsiCard.png"
-                                alt="SchoolLogo"
-                                sx={{
-                                    width: '300px',
-                                    height: '100%'
-                                 }}
-                                
-                            />
-                        </div>
-                        <div>
-                            <CardContent
-                                sx={{ 
-                                    padding: '20px 30px 10px 30px'
-                                }}
-                            > 
-                                <h4 className="cardTitle">
-                                    ICSI: University Website
-                                </h4>
-                                    
-                                <Stack 
-                                    direction="row" 
-                                    spacing={1}
-                                    sx={{ 
-                                        display: 'flex',
-                                        flexWrap: 'wrap',
-                                        justifyContent: 'center',
-                                        margin: '10px',
-                                        gap: '5px 3px'
-                                    }}
-                                >
-                                        <Chip 
-                                            label="EJS" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="SCSS" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="Express.js" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="MongoDB" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="JQuery" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="EJS" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                </Stack>
+                                <a className="projBtns" href="https://todoapp-ralphestor.netlify.app/" target="_blank" rel="noreferrer">
+                                    <Button 
+                                        variant="contained"
+                                        sx={{
+                                            marginTop: '10px',
+                                            textTransform: 'capitalize',
+                                            fontFamily: 'Poppins',
+                                            backgroundColor: '#1F583C', 
+                                            transition: 'all 0.3s ease-in-out',
+                                            
+                                            '&:hover': {
+                                                backgroundColor: '#4abb75',
+                                            }
+                                        }}
+                                    >
+                                        Visit Site
+                                    </Button>
+                                </a>
 
-                                <p className="paragraph">
-                                    This website is inpired by the school that I worked for before. It contains the usual pages for a school website. It is capable of posting articles with images. Log In and Sign Up system was implemented with the help of Passport.js so that only admins can post, update, and delete articles. 
-                                </p>
-                
-                            </CardContent>
-                            <CardActions
-                                sx={{ 
-                                    justifyContent: 'center',
-                                    paddingBottom: '20px'
-                                }}
-                            >
-                                <Button 
-                                    variant="contained"
-                                    sx={{
-                                        marginTop: '10px',
-                                        textTransform: 'capitalize',
-                                        fontFamily: 'Poppins',
-                                        backgroundColor: '#1F583C', 
-                                        transition: 'all 0.3s ease-in-out',
-                                        
-                                        '&:hover': {
-                                            backgroundColor: '#4abb75',
-                                        }
-                                    }}
-                                >
-                                    Visit Site
-                                </Button>
-                                <Button 
-                                    variant="contained"
-                                    sx={{
-                                        marginTop: '10px',
-                                        textTransform: 'capitalize',
-                                        fontFamily: 'Poppins',
-                                        backgroundColor: '#1F583C', 
-                                        transition: 'all 0.3s ease-in-out',
-                                        
-                                        '&:hover': {
-                                            backgroundColor: '#4abb75',
-                                        }
-                                    }}
-                                >
-                                    Visit Github
-                                </Button>
+                                <a className="projBtns" href="https://github.com/ralphestor/todolist" target="_blank" rel="noreferrer">
+                                    <Button 
+                                        variant="contained"
+                                        sx={{
+                                            marginTop: '10px',
+                                            textTransform: 'capitalize',
+                                            fontFamily: 'Poppins',
+                                            backgroundColor: '#1F583C', 
+                                            transition: 'all 0.3s ease-in-out',
+                                            
+                                            '&:hover': {
+                                                backgroundColor: '#4abb75',
+                                            }
+                                        }}
+                                    >
+                                        Visit Github Repo
+                                    </Button>
+                                </a>
                             </CardActions>
                         </div>
                     </Card>
