@@ -98,7 +98,7 @@ const Projects = () => {
                                             }}
                                         />
                                         <Chip 
-                                            label="EJS" 
+                                            label="MVC" 
                                             variant="outlined"                                 
                                             sx={{ 
                                                 fontFamily: 'Poppins',
