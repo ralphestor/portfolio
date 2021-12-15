@@ -121,7 +121,7 @@ const Projects = () => {
                                     }
                                 }}
                             >
-                                <a className="projBtns" href="https://todoapp-ralphestor.netlify.app/" target="_blank" rel="noreferrer">
+                                <a className="projBtns" href="https://icsi-schoolwebsite.herokuapp.com/" target="_blank" rel="noreferrer">
                                     <Button 
                                         variant="contained"
                                         sx={{
