@@ -108,7 +108,7 @@ const Projects = () => {
                                 </Stack>
 
                                 <p className="paragraph">
-                                    This website is inspired by the school that I worked for before. It contains the usual pages for a school website. It is capable of posting articles with images. Log In and Sign Up system was implemented with the help of Passport.js so that only admins can post, update, and delete articles. 
+                                    This website is inspired by the school that I worked for before. It contains the usual pages for a school website. It is capable of posting articles with images. Log In and Sign Up system was implemented with the help of Auth0 so that only admins can post, update, and delete articles. 
                                 </p>
                 
                             </CardContent>
