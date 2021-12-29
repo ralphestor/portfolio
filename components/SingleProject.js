@@ -11,6 +11,7 @@ const SingleProject = props => {
     const chips = props.arrayOfTags.map(tag => {
         return(
             <Chip 
+                key={tag}
                 label={tag} 
                 variant="outlined"                                 
                 sx={{ 
