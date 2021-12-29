@@ -10,7 +10,7 @@ const Contacts = () => {
         <main id="contacts">
             <SectionTitle name="Contact Info"/>
             <div className="contactsGrid">
-                <h4>You can reach me through Gmail and Facebook</h4>
+                <h4>You can reach me through Gmail or Facebook</h4>
                 <div className="contactAccounts">
                     <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=ralphestor30@gmail.com&su=Your+Subject+here&body=Your+Message+here&ui=2" target="_blank" rel="noreferrer">
                         <ContactLinks content={<Icon icon="simple-icons:gmail" color="#ffffff" width="90" />}/>

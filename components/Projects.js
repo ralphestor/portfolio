@@ -6,310 +6,43 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import SingleProject from "./SingleProject";
 
 const Projects = () => {
     return ( 
         <main id="projects">
             <SectionTitle name="My Projects"/>
             <div className="projectsGrid">
-                <div>
-                    <Card
-                        className="card"
-                        sx={{
-                            width: '100%',
-                            boxShadow: '5px 5px 10px #888888',
-                            display: 'flex',
-                            flexDirection: 'row'
-                         }}
-                    
-                    >
-                        <div>
-                            <CardMedia
-                                className="cardImg"
-                                component="img"
-                                image="/icsiCard.png"
-                                alt="SchoolLogo"
-                                sx={{
-                                    width: '300px',
-                                    height: '100%'
-                                 }}
-                                
-                            />
-                        </div>
-                        <div>
-                            <CardContent
-                                sx={{ 
-                                    padding: '20px 30px 10px 30px'
-                                }}
-                            > 
-                                <h4 className="cardTitle">
-                                    ICSI: University Website
-                                </h4>
-                                    
-                                <Stack 
-                                    direction="row" 
-                                    spacing={1}
-                                    sx={{ 
-                                        display: 'flex',
-                                        flexWrap: 'wrap',
-                                        justifyContent: 'center',
-                                        margin: '10px',
-                                        gap: '5px 3px'
-                                    }}
-                                >
-                                        <Chip 
-                                            label="EJS" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="SCSS" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="Express.js" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="MongoDB" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="JQuery" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="MVC" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="Auth0" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                </Stack>
-
-                                <p className="paragraph">
-                                    This website is inspired by the school that I worked for before. It contains the usual pages for a school website. It is capable of posting articles with images. Log In and Sign Up system was implemented with the help of Auth0 so that only admins can post, update, and delete articles. All the data is stored in MongoDB Atlas.
-                                </p>
-                
-                            </CardContent>
-                            <CardActions
-                                sx={{ 
-                                    justifyContent: 'center',
-                                    paddingBottom: '20px',
-                                    '@media screen and (max-width: 400px)': {
-                                        flexDirection: 'column'
-                                    }
-                                }}
-                            >
-                                <a className="projBtns" href="https://icsi-schoolwebsite.herokuapp.com/" target="_blank" rel="noreferrer">
-                                    <Button 
-                                        variant="contained"
-                                        sx={{
-                                            marginTop: '10px',
-                                            textTransform: 'capitalize',
-                                            fontFamily: 'Poppins',
-                                            backgroundColor: '#1F583C', 
-                                            transition: 'all 0.3s ease-in-out',
-                                            
-                                            '&:hover': {
-                                                backgroundColor: '#4abb75',
-                                            }
-                                        }}
-                                    >
-                                        Visit Site
-                                    </Button>
-                                </a>
-
-                                <a className="projBtns" href="https://github.com/ralphestor/icsi" target="_blank" rel="noreferrer">
-                                    <Button 
-                                        variant="outlined"
-                                        sx={{
-                                            marginTop: '10px',
-                                            textTransform: 'capitalize',
-                                            fontFamily: 'Poppins',
-                                            color: '#1F583C', 
-                                            border: '1px solid #1F583C', 
-                                            transition: 'all 0.3s ease-in-out',
-                                            
-                                            '&:hover': {
-                                                backgroundColor: '#4abb75',
-                                                border: '1px solid #4abb75', 
-                                                color: '#FFFFFF'
-                                            }
-                                        }}
-                                    >
-                                        Github Repo
-                                    </Button>
-                                </a>
-                            </CardActions>
-                        </div>
-                    </Card>
-                </div>
-                <div>
-                    <Card
-                        className="card"
-                        sx={{
-                            width: '100%',
-                            boxShadow: '5px 5px 10px #888888',
-                            display: 'flex',
-                            flexDirection: 'row-reverse'
-                         }}
-                    
-                    >
-                        <div>
-                            <CardMedia
-                                className="cardImg"
-                                component="img"
-                                image="/todoApp.png"
-                                alt="SchoolLogo"
-                                sx={{
-                                    width: '300px',
-                                    height: '100%'
-                                 }}
-                                
-                            />
-                        </div>
-                        <div>
-                            <CardContent
-                                sx={{ 
-                                    padding: '20px 30px 10px 30px'
-                                }}
-                            > 
-                                <h4 className="cardTitle">
-                                    TodoApp
-                                </h4>
-                                    
-                                <Stack 
-                                    direction="row" 
-                                    spacing={1}
-                                    sx={{ 
-                                        display: 'flex',
-                                        flexWrap: 'wrap',
-                                        justifyContent: 'center',
-                                        margin: '10px',
-                                        gap: '5px 3px'
-                                    }}
-                                >
-                                        <Chip 
-                                            label="React" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="Hooks" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="Material UI" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                        <Chip 
-                                            label="Local Storage" 
-                                            variant="outlined"                                 
-                                            sx={{ 
-                                                fontFamily: 'Poppins',
-                                                fontSize: '12px'
-                                            }}
-                                        />
-                                </Stack>
-
-                                <p className="paragraph">
-                                    A simple todo list project that can create, update, delete todo items. The data is stored in the Local Storage to save the data. This is a React App that uses hooks for state management. Material UI is utilized for pre-styled react components. A class-based component version of this project is also created which is found in <i>classTodo</i> branch of the Github repository.
-                                </p>
-                
-                            </CardContent>
-                            <CardActions
-                                sx={{ 
-                                    justifyContent: 'center',
-                                    paddingBottom: '20px',
-                                    '@media screen and (max-width: 400px)': {
-                                        flexDirection: 'column'
-                                    }
-                                }}
-                            >
-                                <a className="projBtns" href="https://todoapp-ralphestor.netlify.app/" target="_blank" rel="noreferrer">
-                                    <Button 
-                                        variant="contained"
-                                        sx={{
-                                            marginTop: '10px',
-                                            textTransform: 'capitalize',
-                                            fontFamily: 'Poppins',
-                                            backgroundColor: '#1F583C', 
-                                            transition: 'all 0.3s ease-in-out',
-                                            
-                                            '&:hover': {
-                                                backgroundColor: '#4abb75',
-                                            }
-                                        }}
-                                    >
-                                        Visit Site
-                                    </Button>
-                                </a>
-
-                                <a className="projBtns" href="https://github.com/ralphestor/todolist" target="_blank" rel="noreferrer">
-                                    <Button 
-                                        variant="outlined"
-                                        sx={{
-                                            marginTop: '10px',
-                                            textTransform: 'capitalize',
-                                            fontFamily: 'Poppins',
-                                            color: '#1F583C', 
-                                            border: '1px solid #1F583C', 
-                                            transition: 'all 0.3s ease-in-out',
-                                            
-                                            '&:hover': {
-                                                backgroundColor: '#4abb75',
-                                                border: '1px solid #4abb75', 
-                                                color: '#FFFFFF'
-                                            }
-                                        }}
-                                    >
-                                        Github Repo
-                                    </Button>
-                                </a>
-                            </CardActions>
-                        </div>
-                    </Card>
-                </div>
+                <SingleProject 
+                    cardFlexDirection='row-reverse'
+                    imgSrc='/shanica.png'
+                    imgAlt = 'Shanica Logo'
+                    cardTitle='SHANICA: Vlogger Website'
+                    arrayOfTags={['Next', 'React', 'React-Youtube']}
+                    projectPar='InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar InsertPar'
+                    siteLink='https://shanica.vercel.app/'
+                    githubRepo='https://github.com/ralphestor/shanica_site'
+                />
+                <SingleProject 
+                    cardFlexDirection='row'
+                    imgSrc='/icsiCard.png'
+                    imgAlt = 'School Logo'
+                    cardTitle='ICSI: University Website'
+                    arrayOfTags={['EJS', 'SCSS', 'Express', 'MongoDB', 'JQuery', 'MVC', 'Auth0']}
+                    projectPar='This website is inspired by the school that I worked for before. It contains the usual pages for a school website. It is capable of posting articles with images. Log In and Sign Up system was implemented with the help of Auth0 so that only admins can post, update, and delete articles. All the data is stored in MongoDB Atlas.'
+                    siteLink='https://todoapp-ralphestor.netlify.app/'
+                    githubRepo='https://github.com/ralphestor/icsi'
+                />
+                <SingleProject 
+                    cardFlexDirection='row-reverse'
+                    imgSrc='/todoApp.png'
+                    imgAlt = 'TodoApp Logo'
+                    cardTitle='TodoApp'
+                    arrayOfTags={['React', 'Hooks', 'Material UI', 'Local Storage']}
+                    projectPar='A simple todo list project that can create, update, delete todo items. The data is stored in the Local Storage to save the data. This is a React App that uses hooks for state management. Material UI is utilized for pre-styled react components. A class-based component version of this project is also created which is found in classTodo branch of the Github repository.'
+                    siteLink='https://icsi-schoolwebsite.herokuapp.com/'
+                    githubRepo='https://github.com/ralphestor/todolist'
+                />
             </div>    
         </main>
      );

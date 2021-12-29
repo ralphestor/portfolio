@@ -35,7 +35,7 @@ const Navbar = () => {
             <Toolbar>
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
-                        <Link href='/'>
+                        <Link href='/#home'>
                             <SvgLogo/>
                         </Link>
                     </Grid>

@@ -74,6 +74,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+  opacity: 0;
 
   @include phones {
     height: 130vh;
