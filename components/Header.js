@@ -19,7 +19,7 @@ const Header = () => {
                             <h2 className="headerJob">Web Developer</h2>
 
                             <p className="headerText">Innovative front end developer who finds happiness in building programming projects. 100% eager to learn different technologies to meet business goals. Making positive impact directly to the users is my ultimate motivation.</p>
-                            <Link href='/#contacts'>
+                            <Link href='/#contacts' passHref>
                                 <Button 
                                     className="headerBtn" 
                                     variant="contained"

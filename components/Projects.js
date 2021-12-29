@@ -14,6 +14,7 @@ const Projects = () => {
             <SectionTitle name="My Projects"/>
             <div className="projectsGrid">
                 <SingleProject 
+                    key={1}
                     cardFlexDirection='row-reverse'
                     imgSrc='/shanica.png'
                     imgAlt = 'Shanica Logo'
@@ -24,6 +25,7 @@ const Projects = () => {
                     githubRepo='https://github.com/ralphestor/shanica_site'
                 />
                 <SingleProject 
+                    key={2}
                     cardFlexDirection='row'
                     imgSrc='/icsiCard.png'
                     imgAlt = 'School Logo'
@@ -33,7 +35,8 @@ const Projects = () => {
                     siteLink='https://todoapp-ralphestor.netlify.app/'
                     githubRepo='https://github.com/ralphestor/icsi'
                 />
-                <SingleProject 
+                <SingleProject
+                    key={3}
                     cardFlexDirection='row-reverse'
                     imgSrc='/todoApp.png'
                     imgAlt = 'TodoApp Logo'

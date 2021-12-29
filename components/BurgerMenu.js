@@ -52,7 +52,7 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-          <Link href="/#home">
+          <Link href="/#home" passHref>
           <ListItem 
             button 
             key="Home"
@@ -73,7 +73,7 @@ export default function SwipeableTemporaryDrawer() {
           </ListItem>
           </Link>
 
-          <Link href="/#about">
+          <Link href="/#about" passHref>
           <ListItem 
             button 
             key="About"
@@ -94,7 +94,7 @@ export default function SwipeableTemporaryDrawer() {
           </ListItem>
           </Link>
 
-          <Link href="/#projects">
+          <Link href="/#projects" passHref>
           <ListItem 
             button 
             key="Projects"
@@ -115,7 +115,7 @@ export default function SwipeableTemporaryDrawer() {
           </ListItem>
           </Link>
 
-          <Link href="/#contacts">
+          <Link href="/#contacts" passHref>
           <ListItem 
             button 
             key="Contacts"

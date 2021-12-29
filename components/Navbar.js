@@ -35,22 +35,22 @@ const Navbar = () => {
             <Toolbar>
                 <Grid container spacing={2}>
                     <Grid item xs={6}>
-                        <Link href='/#home'>
+                        <Link href='/#home' passHref>
                             <SvgLogo/>
                         </Link>
                     </Grid>
                     <Grid item xs={6}>
                         <div className='navLinkContain'>
-                            <Link href='/#home'>
+                            <Link href='/#home' passHref>
                                 <a className='navLinks'>Home</a>
                             </Link>
-                            <Link href='/#about'>
+                            <Link href='/#about' passHref>
                                 <a className='navLinks'>About</a>
                             </Link>
-                            <Link href='/#projects'>
+                            <Link href='/#projects' passHref>
                                 <a className='navLinks'>Projects</a>
                             </Link>
-                            <Link href='/#contacts'>
+                            <Link href='/#contacts' passHref>
                                 <a className='navLinks'>Contacts</a>
                             </Link>
                         </div> 
