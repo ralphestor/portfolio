@@ -18,7 +18,7 @@ const Header = () => {
                             <h1 className="headerName">Ralph Estor</h1>
                             <h2 className="headerJob">Web Developer</h2>
 
-                            <p className="headerText">Innovative front end developer who finds happiness in building programming projects. 100% eager to learn different technologies to meet business goals. Making positive impact directly to the users is my ultimate motivation.</p>
+                            <p className="headerText">Innovative web developer who enjoys programming and dedicated to show expertise in a work environment. 100% eager to learn different technologies to meet business goals. Creating great applications that make positive impacts is my ultimate motivation.</p>
                             <Link href='/#contacts' passHref>
                                 <Button 
                                     className="headerBtn" 
