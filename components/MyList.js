@@ -1,8 +1,29 @@
-
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const MyList = () => {
+    const [ ref, inView ] = useInView({
+        threshold: 0.4
+    });
+
+    const animation = useAnimation();
+
+    useEffect(() => {
+        if(inView){
+            animation.start({
+                opacity: 1,
+                transition: { 
+                    type: 'ease',
+                    duration: 0.5,
+                    delay: 0.2
+                }
+            });
+        }
+    }, [inView]);
+
     return ( 
-        <section className="myListGrid">
+        <motion.section ref={ref}  initial={{opacity: 0}} animate={animation} className="myListGrid">
                 <div>
                     <h4 className="aboutLbl myListLbl">Technical Skills</h4>
                     <ul>
@@ -31,7 +52,7 @@ const MyList = () => {
                         <li className="listItem">Cooking and Eating</li>
                     </ul>
                 </div>
-        </section>
+        </motion.section>
      );
 }
  

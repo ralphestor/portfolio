@@ -5,8 +5,30 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const SingleProject = props => {
+    const [ ref, inView ] = useInView({
+        threshold: 0.4
+    });
+
+    const animation = useAnimation();
+
+    useEffect(() => {
+        if(inView){
+            animation.start({
+                opacity: 1,
+                x: 0,
+                transition: { 
+                    type: 'ease',
+                    duration: 0.5,
+                    delay: 0.2
+                }
+            });
+        }
+    }, [inView]);
 
     const chips = props.arrayOfTags.map(tag => {
         return(
@@ -23,7 +45,7 @@ const SingleProject = props => {
     })
 
     return ( 
-                <div>
+                <motion.div ref={ref} initial={{opacity: 0, x: '50px'}} animate={animation}>
                     <Card
                         className="card"
                         sx={{
@@ -128,7 +150,7 @@ const SingleProject = props => {
                             </CardActions>
                         </div>
                     </Card>
-                </div>
+                </motion.div>
      );
 }
  
