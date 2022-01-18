@@ -23,7 +23,6 @@ const Header = () => {
         if(inView){
             animation.start({
                 opacity: 1,
-                scale: 1,
                 transition: { 
                     type: 'ease',
                     duration: 0.5,
@@ -33,8 +32,7 @@ const Header = () => {
         }
         if(!inView){
             animation.start({
-                opacity: 0,
-                scale: 0.7
+                opacity: 0
             })
         }
     }, [inView]);
@@ -93,7 +91,7 @@ const Header = () => {
                         </motion.div>
                     </Grid>
                     <Grid item xs={6}>
-                        <motion.div ref={ref} initial={{opacity: 0, scale: 0.7, y: '-200px'}} animate={animation} className="headerImage">
+                        <motion.div ref={ref} initial={{opacity: 0}} animate={animation} className="headerImage">
                             <Image
                                 src="/ralphHeader2.png"
                                 alt="Picture of the author"
