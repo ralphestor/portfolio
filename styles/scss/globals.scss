@@ -11,7 +11,9 @@
   font-family: 'Outfit', sans-serif;
 }
 
-
+body {
+  background-color: hsl(0, 0%, 98%);
+}
 
 .navBar {
     box-shadow: none;
@@ -74,7 +76,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-  opacity: 0;
 
   @include phones {
     height: 130vh;
