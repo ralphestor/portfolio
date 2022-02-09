@@ -14,7 +14,7 @@ const Projects = () => {
             <SectionTitle name="My Projects"/>
             <div className="projectsGrid">
                 <SingleProject 
-                    key={2}
+                    key={1}
                     cardFlexDirection='row-reverse'
                     imgSrc='/icsiCard.png'
                     imgAlt = 'School Logo'
@@ -25,7 +25,7 @@ const Projects = () => {
                     githubRepo='https://github.com/ralphestor/icsi'
                 />
                 <SingleProject 
-                    key={1}
+                    key={2}
                     cardFlexDirection='row'
                     imgSrc='/shanica.png'
                     imgAlt = 'Shanica Logo'
@@ -35,8 +35,19 @@ const Projects = () => {
                     siteLink='https://shanica.vercel.app/'
                     githubRepo='https://github.com/ralphestor/shanica_site'
                 />
-                <SingleProject
+                <SingleProject 
                     key={3}
+                    cardFlexDirection='row'
+                    imgSrc='/countries.png'
+                    imgAlt = 'countries'
+                    cardTitle='Where in the World? (In Progress)'
+                    arrayOfTags={['React', 'API']}
+                    projectPar='This project is a challenge from frontendmentor.io and all the data is fetched from restcountries.com. I used react for this project to use context to add dark mode theme to components and to use react pagination.'
+                    siteLink='https://world-infos.netlify.app/'
+                    githubRepo='https://github.com/ralphestor/rest_countries'
+                />
+                <SingleProject
+                    key={4}
                     cardFlexDirection='row-reverse'
                     imgSrc='/todoApp.png'
                     imgAlt = 'TodoApp Logo'
