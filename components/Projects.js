@@ -37,7 +37,7 @@ const Projects = () => {
                 />
                 <SingleProject 
                     key={3}
-                    cardFlexDirection='row'
+                    cardFlexDirection='row-reverse'
                     imgSrc='/countries.png'
                     imgAlt = 'countries'
                     cardTitle='Where in the World? (In Progress)'
@@ -48,7 +48,7 @@ const Projects = () => {
                 />
                 <SingleProject
                     key={4}
-                    cardFlexDirection='row-reverse'
+                    cardFlexDirection='row'
                     imgSrc='/todoApp.png'
                     imgAlt = 'TodoApp Logo'
                     cardTitle='TodoApp'
